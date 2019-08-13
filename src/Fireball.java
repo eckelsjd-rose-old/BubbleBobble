@@ -15,9 +15,9 @@ public class Fireball extends Projectile {
 		super(level, x, y, dir);
 		this.color = Color.RED;
 		if (this.direction == -1) {
-			this.sprite = (new ImageIcon("src/sprites/fireball_left.png")).getImage();
+			this.sprite = (new ImageIcon("sprites/fireball_left.png")).getImage();
 		} else {
-			this.sprite = (new ImageIcon("src/sprites/fireball_right.png")).getImage();
+			this.sprite = (new ImageIcon("sprites/fireball_right.png")).getImage();
 		}
 	}
 

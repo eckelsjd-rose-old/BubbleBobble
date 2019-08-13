@@ -28,10 +28,10 @@ public class Fruit extends Collidable {
 		this.heroCanTouch = false;
 
 		this.sprites = new Image[4];
-		this.sprites[0] = (new ImageIcon("src/sprites/banana.png")).getImage();
-		this.sprites[1] = (new ImageIcon("src/sprites/eggplant.png")).getImage();
-		this.sprites[2] = (new ImageIcon("src/sprites/watermelon.png")).getImage();
-		this.sprites[3] = (new ImageIcon("src/sprites/ur_boi_rascal.gif")).getImage();
+		this.sprites[0] = (new ImageIcon("sprites/banana.png")).getImage();
+		this.sprites[1] = (new ImageIcon("sprites/eggplant.png")).getImage();
+		this.sprites[2] = (new ImageIcon("sprites/watermelon.png")).getImage();
+		this.sprites[3] = (new ImageIcon("sprites/ur_boi_rascal.gif")).getImage();
 		if (scoreValue == 10) {
 			this.sprite = this.sprites[0];
 		} else if (scoreValue == 500) {

@@ -18,9 +18,9 @@ public class Incendo extends Monster {
 		super(level, x, y, width, height);
 		this.color = Color.BLUE;
 		this.scoreValue = 3000;
-		this.sprites[0] = (new ImageIcon("src/sprites/incendo_left.gif")).getImage();
-		this.sprites[1] = (new ImageIcon("src/sprites/incendo_right.gif")).getImage();
-		this.sprites[2] = (new ImageIcon("src/sprites/incendo_bubble.gif")).getImage();
+		this.sprites[0] = (new ImageIcon("sprites/incendo_left.gif")).getImage();
+		this.sprites[1] = (new ImageIcon("sprites/incendo_right.gif")).getImage();
+		this.sprites[2] = (new ImageIcon("sprites/incendo_bubble.gif")).getImage();
 		this.sprite = (this.direction == 1) ? this.sprites[1] : this.sprites[0];
 	}
 

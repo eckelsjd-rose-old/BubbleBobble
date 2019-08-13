@@ -24,9 +24,9 @@ public class Bubble extends Projectile {
 		this.color = Color.CYAN;
 		this.scoreValue = 10;
 		this.sprites = new Image[3];
-		this.sprites[0] = (new ImageIcon("src/sprites/bubble.gif")).getImage();
-		this.sprites[1] = (new ImageIcon("src/sprites/bubble6.png")).getImage();
-		this.sprites[2] = (new ImageIcon("src/sprites/fruit_bubble.png")).getImage();
+		this.sprites[0] = (new ImageIcon("sprites/bubble.gif")).getImage();
+		this.sprites[1] = (new ImageIcon("sprites/bubble6.png")).getImage();
+		this.sprites[2] = (new ImageIcon("sprites/fruit_bubble.png")).getImage();
 		this.sprite = this.sprites[0];
 	}
 

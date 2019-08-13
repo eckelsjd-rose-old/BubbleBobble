@@ -15,9 +15,9 @@ public class BubbleBuster extends Monster {
 		super(level, x, y, width, height);
 		this.color = Color.MAGENTA;
 		this.scoreValue = 500;
-		this.sprites[0] = (new ImageIcon("src/sprites/bubble_buster_left.gif")).getImage();
-		this.sprites[1] = (new ImageIcon("src/sprites/bubble_buster_right.gif")).getImage();
-		this.sprites[2] = (new ImageIcon("src/sprites/bubble_buster_bubble.gif")).getImage();
+		this.sprites[0] = (new ImageIcon("sprites/bubble_buster_left.gif")).getImage();
+		this.sprites[1] = (new ImageIcon("sprites/bubble_buster_right.gif")).getImage();
+		this.sprites[2] = (new ImageIcon("sprites/bubble_buster_bubble.gif")).getImage();
 		this.sprite = (this.direction == 1) ? this.sprites[1] : this.sprites[0];
 	}
 

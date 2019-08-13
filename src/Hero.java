@@ -29,11 +29,11 @@ public class Hero extends Collidable {
 		this.color = Color.YELLOW;
 
 		this.sprites = new Image[5];
-		this.sprites[0] = (new ImageIcon("src/sprites/hero0.png")).getImage();
-		this.sprites[1] = (new ImageIcon("src/sprites/hero_left.gif")).getImage();
-		this.sprites[2] = (new ImageIcon("src/sprites/hero_right.gif")).getImage();
-		this.sprites[3] = (new ImageIcon("src/sprites/hero_invincible_left.gif")).getImage();
-		this.sprites[4] = (new ImageIcon("src/sprites/hero_invincible_right.gif")).getImage();
+		this.sprites[0] = (new ImageIcon("sprites/hero0.png")).getImage();
+		this.sprites[1] = (new ImageIcon("sprites/hero_left.gif")).getImage();
+		this.sprites[2] = (new ImageIcon("sprites/hero_right.gif")).getImage();
+		this.sprites[3] = (new ImageIcon("sprites/hero_invincible_left.gif")).getImage();
+		this.sprites[4] = (new ImageIcon("sprites/hero_invincible_right.gif")).getImage();
 		this.sprite = this.sprites[0];
 
 	}

@@ -62,7 +62,7 @@ public abstract class Monster extends Collidable {
 	}
 
 	/**
-	 * Monster collides with platforms similary to a Hero, but changes its
+	 * Monster collides with platforms similarly to a Hero, but changes its
 	 * direction upon collision.
 	 */
 	@Override

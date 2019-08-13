@@ -305,7 +305,7 @@ public class LevelComponent extends JComponent {
 	public Level constructLevel(int levelNum) {
 		try {
 			Level level = new Level();
-			File level1 = new File("src/levels/level" + levelNum + ".txt");
+			File level1 = new File("levels/level" + levelNum + ".txt");
 			Scanner r1 = new Scanner(level1);
 			int currentRow = 0;
 			while (r1.hasNextLine()) {
@@ -314,32 +314,32 @@ public class LevelComponent extends JComponent {
 					// tiny platform (1 space)
 					if (currentLine.charAt(i) == '7') {
 						level.addCollidable(new Platform(level, TILE_SIZE * i, TILE_SIZE * currentRow, TILE_SIZE,
-								TILE_SIZE, (new ImageIcon("src/sprites/tinyPlatform.png")).getImage()));
+								TILE_SIZE, (new ImageIcon("sprites/tinyPlatform.png")).getImage()));
 					}
 					// small platform (2 spaces)
 					if (currentLine.charAt(i) == 'S') {
 						level.addCollidable(new Platform(level, TILE_SIZE * i, TILE_SIZE * currentRow, 2 * TILE_SIZE,
-								TILE_SIZE, (new ImageIcon("src/sprites/smallPlatform.png")).getImage()));
+								TILE_SIZE, (new ImageIcon("sprites/smallPlatform.png")).getImage()));
 					}
 					// medium platform (3 spaces)
 					if (currentLine.charAt(i) == 'M') {
 						level.addCollidable(new Platform(level, TILE_SIZE * i, TILE_SIZE * currentRow, 3 * TILE_SIZE,
-								TILE_SIZE, (new ImageIcon("src/sprites/mediumPlatform.png")).getImage()));
+								TILE_SIZE, (new ImageIcon("sprites/mediumPlatform.png")).getImage()));
 					}
 					// large platform (5 spaces)
 					if (currentLine.charAt(i) == 'L') {
 						level.addCollidable(new Platform(level, TILE_SIZE * i, TILE_SIZE * currentRow, 5 * TILE_SIZE,
-								TILE_SIZE, (new ImageIcon("src/sprites/bigPlatform.png")).getImage()));
+								TILE_SIZE, (new ImageIcon("sprites/bigPlatform.png")).getImage()));
 					}
 					// floor platform
 					if (currentLine.charAt(i) == 'F') {
 						level.addCollidable(new Platform(level, TILE_SIZE * i, TILE_SIZE * currentRow,
-								NUM_TILES * TILE_SIZE, TILE_SIZE, (new ImageIcon("src/sprites/floor.png")).getImage()));
+								NUM_TILES * TILE_SIZE, TILE_SIZE, (new ImageIcon("sprites/floor.png")).getImage()));
 					}
 					// wall platform
 					if (currentLine.charAt(i) == 'W') {
 						level.addCollidable(new Platform(level, TILE_SIZE * i, TILE_SIZE * currentRow, TILE_SIZE,
-								NUM_TILES * TILE_SIZE, (new ImageIcon("src/sprites/wall.png")).getImage()));
+								NUM_TILES * TILE_SIZE, (new ImageIcon("sprites/wall.png")).getImage()));
 					}
 					// hero
 					if (currentLine.charAt(i) == 'H') {
@@ -358,15 +358,15 @@ public class LevelComponent extends JComponent {
 					}
 					// Game Over level
 					if (currentLine.charAt(i) == 'T') {
-						level.setLevelScreen((new ImageIcon("src/images/game_over.png")).getImage(), true);
+						level.setLevelScreen((new ImageIcon("images/game_over.png")).getImage(), true);
 					}
 					// Main Menu level
 					if (currentLine.charAt(i) == 't') {
-						level.setLevelScreen((new ImageIcon("src/images/main_menu.png")).getImage(), false);
+						level.setLevelScreen((new ImageIcon("images/main_menu.png")).getImage(), false);
 					}
 					// Game Won level
 					if (currentLine.charAt(i) == 'Z') {
-						level.setLevelScreen((new ImageIcon("src/images/game_won.png")).getImage(), false);
+						level.setLevelScreen((new ImageIcon("images/game_won.png")).getImage(), false);
 					}
 					// Spawn my boi Rascal
 					if (currentLine.charAt(i) == 'R') {
