@@ -1,4 +1,4 @@
-# bubble_bobble
+# BubbleBobble
 ## Info
 Contributors: Joshua Eckels, Sabri Amer
 
@@ -6,17 +6,41 @@ Project: Java application development, Bubble Bobble arcade game simulation.
 
 Class: CSSE220 - Introduction to Object-Oriented Programming
 
+Version: Java SE 17
+
 Rose-Hulman Institute of Technology
 
-`bubble_bobble` is a Java Eclipse project.
+![BubbleBobble](doc/bubble-level.png)
 
-System: Ubuntu 18.04. 
-## Install and run
-1. **Clone the repository** to `your/desired/directory`.
+## Installation
+1. Install the [Java SE 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) development kit.
+1. `git clone https://github.com/eckelsjd/BubbleBobble`
+
+From the project root `BubbleBobble/`:
+```shell
+mkdir -p bin
+javac -d bin -sourcepath src src/com/bubble_bobble/Main.java
+cp -r resources/* bin/
 ```
-cd your/desired/directory
-git clone https://github.com/eckelsjd/bubble_bobble.git
+
+And to run:
+```shell
+cd bin
+java com.bubble_bobble.Main
 ```
-2. Install and setup [Eclipse](https://linuxize.com/post/how-to-install-the-latest-eclipse-ide-on-ubuntu-18-04/) on your system. (Ubuntu 18.04). 
-3. Open Eclipse and choose "File > Open projects from filesystem". Choose `your/desired/directory` as the source folder of the project. Click "Finish".
-4. Open `Main.java` and click run to run the program. Follow the on-screen instructions to play.
+
+## Bundle to `.jar`
+From the root `BubbleBobble/` directory:
+```shell
+mdkir -p bin
+javac -d bin -sourcepath src src/com/bubble_bobble/Main.java
+cp -r resources/* bin/
+jar --create --file BubbleBobble.jar --main-class com.bubble_bobble.Main -C bin/ .
+```
+
+And then to run the jar:
+```shell
+java -jar BubbleBobble.jar
+```
+
+We also provide a pre-compiled [jar executable](BubbleBobble.jar).
